@@ -68,35 +68,26 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
-            ホーム
-          </Link>
-          <Link href="/service_advisory" className="text-gray-700 hover:text-blue-600 transition-colors">
-            サービス
-          </Link>
-          <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
-            会社概要
-          </Link>
-          <Button
-            asChild
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white"
-          >
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSd1-azWWsxWFq2rA_EWJ67oNpBntaajtu7kiVmsG5hrG-uF9A/viewform?usp=dialog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              お問い合わせ
-            </a>
-          </Button>
-        </nav>
-
         <div className="flex items-center gap-2">
           <div className="md:hidden">
             <Button
               asChild
               size="sm"
+              className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white"
+            >
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd1-azWWsxWFq2rA_EWJ67oNpBntaajtu7kiVmsG5hrG-uF9A/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                お問い合わせ
+              </a>
+            </Button>
+          </div>
+
+          <div className="hidden md:block">
+            <Button
+              asChild
               className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white"
             >
               <a

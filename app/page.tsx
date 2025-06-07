@@ -17,14 +17,7 @@ export default function Home() {
           <br />
           人とチームの力を引き出すことで、社会のクリエイティビティを最大化します。
         </p>
-        <div className="flex justify-center gap-6 pt-4">
-          <Button
-            asChild
-            size="lg"
-            className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white shadow-xl px-8 py-4 text-lg"
-          >
-            <Link href="/service_advisory">サービスを見る</Link>
-          </Button>
+        <div className="flex justify-center pt-4">
           <Button
             variant="outline"
             size="lg"
@@ -335,7 +328,9 @@ export default function Home() {
               size="lg"
               className="bg-blue-500 text-white hover:bg-blue-600 border-white px-8 py-4 text-lg font-semibold"
             >
-              <Link href="/recruitment">採用募集</Link>
+              <Link href="/recruitment" scroll={true}>
+                採用募集
+              </Link>
             </Button>
           </div>
         </div>
