@@ -5,10 +5,9 @@ import type React from "react"
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu } from "lucide-react"
+import { Menu, Home, Briefcase, Users, Mail } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Home, Briefcase, Users } from "lucide-react"
 
 interface NavItem {
   title: string
@@ -32,6 +31,11 @@ const navItems: NavItem[] = [
       { title: "新規事業・DXのPMO代行", href: "/service_pmo" },
       { title: "新規事業・DXに関する人材育成", href: "/service_training" },
     ],
+  },
+  {
+    title: "ニュースレター",
+    href: "/newsletter/generativeAI_toC",
+    icon: <Mail className="h-5 w-5" />,
   },
   {
     title: "会社概要",
