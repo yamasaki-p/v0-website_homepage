@@ -246,18 +246,15 @@ export default function Home() {
 
         <div className="max-w-5xl mx-auto">
           <div className="rounded-3xl border-2 p-8 lg:p-12 bg-gradient-to-br from-white to-blue-50">
-            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
-              <div className="lg:col-span-1">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">会社概要</h3>
-              </div>
-              <div className="lg:col-span-2 space-y-6">
+            <div className="grid gap-8 lg:gap-12">
+              <div className="space-y-6">
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">会社名</h4>
                   <p className="text-gray-700">株式会社グロースコミット</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">所在地</h4>
-                  <p className="text-gray-700">東京都渋谷区神宮前六丁目２３番４号　桑野ビル２階</p>
+                  <p className="text-gray-700">東京都渋谷区神宮前六丁目２３番４号 ２Ｆ</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-3">業務内容</h4>
