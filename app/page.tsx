@@ -183,7 +183,7 @@ export default function Home() {
                 <img
                   src="/images/ceo-photo-new.jpg"
                   alt="山崎 亮 代表取締役"
-                  className="w-48 lg:w-56 object-cover border-2 border-white shadow-lg rounded-lg"
+                  className="w-48 lg:w-56 h-48 lg:h-56 object-cover object-top border-2 border-white shadow-lg rounded-lg"
                 />
               </div>
               <div className="flex-1 text-center lg:text-left space-y-6">
