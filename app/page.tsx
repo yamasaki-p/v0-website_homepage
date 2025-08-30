@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Target, Briefcase, Users, ExternalLink } from "lucide-react"
+import { Target, Briefcase, Users, ExternalLink } from "lucide-react"
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
             variant="outline"
             size="lg"
             asChild
-            className="border-blue-300 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg"
+            className="border-blue-300 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg bg-transparent"
           >
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSd1-azWWsxWFq2rA_EWJ67oNpBntaajtu7kiVmsG5hrG-uF9A/viewform?usp=preview"
@@ -83,15 +83,6 @@ export default function Home() {
                 新規事業やDX推進を、"構想で止まらず、動かす"戦略に落とし込みます。
               </p>
 
-              <div className="flex justify-end">
-                <Link
-                  href="/service_advisory"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors"
-                >
-                  詳しく見る <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </div>
-
               <hr className="border-gray-200" />
 
               <div className="space-y-4">
@@ -122,15 +113,6 @@ export default function Home() {
                 そんな状態に対して、進捗管理・会議体設計・チームの巻き込みまでを支援する、実行型のPMOサービスを提供します。
               </p>
 
-              <div className="flex justify-end">
-                <Link
-                  href="/service_pmo"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors"
-                >
-                  詳しく見る <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </div>
-
               <hr className="border-gray-200" />
 
               <div className="space-y-4">
@@ -160,15 +142,6 @@ export default function Home() {
                 <br />
                 人材要件の定義から研修設計、OJTの実施まで一貫して支援します。
               </p>
-
-              <div className="flex justify-end">
-                <Link
-                  href="/service_training"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors"
-                >
-                  詳しく見る <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </div>
 
               <hr className="border-gray-200" />
 
@@ -202,25 +175,30 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto space-y-12">
+          {/* 代表 */}
           <div className="rounded-3xl border-2 p-8 lg:p-12 bg-gradient-to-br from-white to-blue-50">
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
               <div className="flex-shrink-0">
                 <img
                   src="/images/ceo-photo-new.jpg"
-                  alt="山崎 亮 代表"
+                  alt="山崎 亮 代表取締役"
                   className="w-48 lg:w-56 object-cover border-2 border-white shadow-lg rounded-lg"
                 />
               </div>
               <div className="flex-1 text-center lg:text-left space-y-6">
                 <div>
-                  <p className="text-blue-600 font-semibold text-lg">代表</p>
+                  <p className="text-blue-600 font-semibold text-lg">代表取締役</p>
                   <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">山崎 亮</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed text-lg">
                   DeNAにて新規事業・事業開発に従事。外資系コンサルティングファーム（戦略部門）にて、大手企業のDX・新規事業戦略を多数支援。数十社の事業開発・組織設計・人材育成に関与し、"動く現場"をつくることに強みを持つ。ビジネスと組織、個人の成長の交差点に立ち続けながら、創造的な組織づくりを支援中
                 </p>
-                <Button asChild variant="outline" className="border-blue-300 text-blue-600 hover:bg-blue-50">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-blue-300 text-blue-600 hover:bg-blue-50 bg-transparent"
+                >
                   <a
                     href="https://note.com/growth_commit"
                     target="_blank"
@@ -230,6 +208,28 @@ export default function Home() {
                     noteを執筆中 <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* リードエンジニア */}
+          <div className="rounded-3xl border-2 p-8 lg:p-12 bg-gradient-to-br from-white to-cyan-50">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
+              <div className="flex-shrink-0">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E5%B0%8F%E5%B7%9D%E3%81%95%E3%82%93%E5%86%99%E7%9C%9F.jpg-AE0o2ebPaS9hUN8MvTCIXPo0VvdeD8.jpeg"
+                  alt="小川 芳充 リードエンジニア"
+                  className="w-48 lg:w-56 h-48 lg:h-56 object-cover object-top border-2 border-white shadow-lg rounded-lg"
+                />
+              </div>
+              <div className="flex-1 text-center lg:text-left space-y-6">
+                <div>
+                  <p className="text-cyan-600 font-semibold text-lg">リードエンジニア</p>
+                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">小川 芳充</h3>
+                </div>
+                <p className="text-gray-700 leading-relaxed text-lg">
+                  サイバーエージェントにて、ゲーム・広告システム・ECシステムの開発に従事。大手メディア企業との協業を経て、toC／toB向けの複数サービスの設計・開発を担当。現場目線での課題発見と、実装まで落とし込むプロセス設計を得意とする。技術・ビジネス・組織の最適な連携を目指しながら、AIによる開発と業務効率化の支援を探求・実践中。
+                </p>
               </div>
             </div>
           </div>
@@ -257,7 +257,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-2">所在地</h4>
-                  <p className="text-gray-700">東京都港区南青山3丁目1番36号 丸竹ビル</p>
+                  <p className="text-gray-700">東京都渋谷区神宮前六丁目２３番４号　桑野ビル２階</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-3">業務内容</h4>
@@ -306,9 +306,6 @@ export default function Home() {
       <section className="rounded-3xl bg-gradient-to-r from-blue-600 to-cyan-600 p-12 text-center text-white shadow-2xl">
         <div className="max-w-4xl mx-auto space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter">お問い合わせ</h2>
-          <p className="text-xl text-blue-100 leading-relaxed">
-            「お問い合わせ」のボタンリンクと「採用募集」のボタンリンクをクリックしてください。
-          </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Button
               asChild
