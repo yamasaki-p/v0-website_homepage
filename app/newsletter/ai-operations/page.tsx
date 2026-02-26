@@ -257,29 +257,27 @@ export default function AIOperationsNewsletterPage() {
                     #mc_embed_signup .button,
                     #mc_embed_signup input[type="submit"],
                     #mc_embed_signup #mc-embedded-subscribe {
-                      width: 100% !important;
-                      max-width: 100% !important;
-                      height: auto !important;
+                      width: 100%;
+                      max-width: 100%;
+                      height: auto;
                       min-height: 48px;
-                      margin: 8px 0 0 0 !important;
-                      padding: 14px 24px !important;
-                      font-size: 16px !important;
+                      margin: 8px 0 0 0;
+                      padding: 14px 24px;
+                      font-size: 16px;
                       font-weight: 600;
-                      line-height: 1.4 !important;
-                      background-color: #2563eb !important;
-                      border: none !important;
-                      border-radius: 8px !important;
+                      line-height: 1.4;
+                      color: #fff;
+                      background-color: #2563eb;
+                      border: none;
+                      border-radius: 8px;
                       cursor: pointer;
                       transition: background-color 0.2s;
-                      overflow: visible !important;
-                      white-space: normal;
-                      display: block;
                       box-sizing: border-box;
                     }
                     #mc_embed_signup .button:hover,
                     #mc_embed_signup input[type="submit"]:hover,
                     #mc_embed_signup #mc-embedded-subscribe:hover {
-                      background-color: #1d4ed8 !important;
+                      background-color: #1d4ed8;
                     }
                     #mc_embed_signup h2 {
                       display: none;
@@ -294,17 +292,14 @@ export default function AIOperationsNewsletterPage() {
                       margin-top: 16px;
                     }
                     #mc_embed_signup .optionalParent .clear.foot {
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      gap: 16px;
+                      text-align: center;
                     }
                     #mc_embed_signup .refferal_badge {
                       max-width: 100%;
                       height: auto;
                     }
                     #mc_embed_signup .optionalParent p {
-                      margin: 0 !important;
+                      margin-top: 12px;
                     }
                     @media screen and (max-width: 640px) {
                       #mc_embed_signup .mc-field-group {
@@ -317,8 +312,8 @@ export default function AIOperationsNewsletterPage() {
                       #mc_embed_signup .button,
                       #mc_embed_signup input[type="submit"],
                       #mc_embed_signup #mc-embedded-subscribe {
-                        font-size: 16px !important;
-                        padding: 16px !important;
+                        font-size: 16px;
+                        padding: 16px;
                         min-height: 52px;
                       }
                     }
@@ -377,7 +372,7 @@ export default function AIOperationsNewsletterPage() {
                           className="button"
                           value="無料で登録する"
                         />
-                        <p style={{ margin: "0", textAlign: "center" }}>
+                        <p style={{ marginTop: "12px", textAlign: "center" }}>
                           <a href="http://eepurl.com/jg2s62" title="Mailchimp - email marketing made easy and fun">
                             <img
                               className="refferal_badge"
@@ -386,8 +381,7 @@ export default function AIOperationsNewsletterPage() {
                               style={{
                                 width: "160px",
                                 height: "28px",
-                                display: "block",
-                                margin: "0 auto",
+                                display: "inline-block",
                                 opacity: 0.7,
                               }}
                             />
