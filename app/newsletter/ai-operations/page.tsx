@@ -373,7 +373,7 @@ export default function AIOperationsNewsletterPage() {
                       <input type="text" name="b_2d6d03fc73a4ff4ff1acfe08f_f281adc417" tabIndex={-1} />
                     </div>
                     <div className="optionalParent">
-                      <div className="clear foot">
+                      <div className="clear foot" style={{ display: "block" }}>
                         <input
                           type="submit"
                           name="subscribe"
@@ -383,25 +383,25 @@ export default function AIOperationsNewsletterPage() {
                           disabled={isSubmitting}
                           style={isSubmitting ? { opacity: 0.5, cursor: "not-allowed" } : {}}
                         />
-                        <p style={{ marginTop: "10px", textAlign: "center", fontSize: "12px", color: "#6b7280", lineHeight: "1.5" }}>
-                          ※ クリック後、数秒お待ちください（連続クリック不要）
-                        </p>
-                        <p style={{ marginTop: "10px", textAlign: "center" }}>
-                          <a href="http://eepurl.com/jg2s62" title="Mailchimp - email marketing made easy and fun">
-                            <img
-                              className="refferal_badge"
-                              src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                              alt="Intuit Mailchimp"
-                              style={{
-                                width: "160px",
-                                height: "28px",
-                                display: "inline-block",
-                                opacity: 0.7,
-                              }}
-                            />
-                          </a>
-                        </p>
                       </div>
+                      <p style={{ marginTop: "12px", textAlign: "center", fontSize: "12px", color: "#6b7280", lineHeight: "1.5" }}>
+                        ※ クリック後、数秒お待ちください（連続クリック不要）
+                      </p>
+                      <p style={{ marginTop: "12px", textAlign: "center" }}>
+                        <a href="http://eepurl.com/jg2s62" title="Mailchimp - email marketing made easy and fun">
+                          <img
+                            className="refferal_badge"
+                            src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                            alt="Intuit Mailchimp"
+                            style={{
+                              width: "160px",
+                              height: "28px",
+                              display: "inline-block",
+                              opacity: 0.7,
+                            }}
+                          />
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </form>
