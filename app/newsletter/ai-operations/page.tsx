@@ -381,12 +381,12 @@ export default function AIOperationsNewsletterPage() {
                           className="button"
                           value={isSubmitting ? "送信中..." : "無料で登録する"}
                           disabled={isSubmitting}
-                          style={isSubmitting ? { opacity: 0.7, cursor: "not-allowed" } : {}}
+                          style={isSubmitting ? { opacity: 0.5, cursor: "not-allowed" } : {}}
                         />
-                        <p style={{ marginTop: "8px", textAlign: "center", fontSize: "12px", color: "#6b7280" }}>
-                          ※ クリック後、完了画面が表示されるまでお待ちください
+                        <p style={{ marginTop: "10px", textAlign: "center", fontSize: "12px", color: "#6b7280", lineHeight: "1.5" }}>
+                          ※ クリック後、数秒お待ちください（連続クリック不要）
                         </p>
-                        <p style={{ marginTop: "12px", textAlign: "center" }}>
+                        <p style={{ marginTop: "10px", textAlign: "center" }}>
                           <a href="http://eepurl.com/jg2s62" title="Mailchimp - email marketing made easy and fun">
                             <img
                               className="refferal_badge"
