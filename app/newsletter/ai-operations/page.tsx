@@ -1,8 +1,10 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export default function AIOperationsNewsletterPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -12,6 +14,12 @@ export default function AIOperationsNewsletterPage() {
     if (formSection) {
       formSection.scrollIntoView({ behavior: "smooth" })
     }
+  }
+
+  const handleFormSubmit = () => {
+    // 送信中状態にする（二重クリック防止）
+    setIsSubmitting(true)
+    // Mailchimpへの通常POST送信は継続される（preventDefaultしない）
   }
 
   return (
@@ -328,6 +336,7 @@ export default function AIOperationsNewsletterPage() {
                   name="mc-embedded-subscribe-form"
                   className="validate"
                   target="_blank"
+                  onSubmit={handleFormSubmit}
                 >
                   <div id="mc_embed_signup_scroll">
                     <h2>Subscribe</h2>
@@ -370,8 +379,13 @@ export default function AIOperationsNewsletterPage() {
                           name="subscribe"
                           id="mc-embedded-subscribe"
                           className="button"
-                          value="無料で登録する"
+                          value={isSubmitting ? "送信中..." : "無料で登録する"}
+                          disabled={isSubmitting}
+                          style={isSubmitting ? { opacity: 0.7, cursor: "not-allowed" } : {}}
                         />
+                        <p style={{ marginTop: "8px", textAlign: "center", fontSize: "12px", color: "#6b7280" }}>
+                          ※ クリック後、完了画面が表示されるまでお待ちください
+                        </p>
                         <p style={{ marginTop: "12px", textAlign: "center" }}>
                           <a href="http://eepurl.com/jg2s62" title="Mailchimp - email marketing made easy and fun">
                             <img
