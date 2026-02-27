@@ -8,9 +8,10 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.growthcommit.com"),
   title: "GrowthCommit - 新規事業・DXの戦略策定から実行支援まで",
   description: "GrowthCommitは、新規事業・DXの戦略策定から実行支援、人材育成までワンストップで提供する企業です。",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
