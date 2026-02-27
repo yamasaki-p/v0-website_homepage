@@ -3,8 +3,28 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "AI活用を現場で動かす実務責任者のためのニュースレター - GrowthCommit",
-  description: "AIツールの話だけでなく、プロジェクト推進・人材育成まで。上流の戦略と現場への埋め込みをつなぐ実践知を月1回お届けします。",
+  title: "AI活用・新規事業を前に進める実務責任者向けメルマガ | GrowthCommit",
+  description: "AI活用・新規事業プロジェクトを前に進める実務責任者向けに、AI活用 / PM / 人材育成の実践知を配信するニュースレターです。無料・月1回前後・いつでも解除可能。",
+  openGraph: {
+    title: "AI活用・新規事業を前に進める実務責任者向けメルマガ",
+    description: "AI活用 / PM / 人材育成の実践知を配信。実務で使えるテーマを厳選してお届けします。",
+    url: "/newsletter/ai-operations",
+    type: "website",
+    images: [
+      {
+        url: "/og/newsletter-ai-operations.png",
+        width: 1200,
+        height: 630,
+        alt: "AI活用・新規事業を前に進める実務責任者向けメルマガ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI活用・新規事業を前に進める実務責任者向けメルマガ",
+    description: "AI活用 / PM / 人材育成の実践知を配信。実務で使えるテーマを厳選してお届けします。",
+    images: ["/og/newsletter-ai-operations.png"],
+  },
 }
 
 // LP専用のシンプルなヘッダー（ロゴのみ）
