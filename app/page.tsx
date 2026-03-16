@@ -1,21 +1,20 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Target, Briefcase, Users, ExternalLink } from "lucide-react"
+import { Target, Sparkles, Users, ExternalLink } from "lucide-react"
 
 export default function Home() {
   return (
     <div className="container mx-auto space-y-20 py-12">
       {/* ヒーローセクション */}
       <section className="space-y-8 text-center py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50 rounded-3xl">
+        <p className="text-sm md:text-base font-semibold tracking-widest text-blue-600 uppercase">
+          EFFORTLESS TRANSFORMATION
+        </p>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent leading-tight">
-          新規事業・DXで、
-          <br />
-          社会のクリエイティビティを最大化する
+          組織の複雑性を、圧縮する
         </h1>
         <p className="mx-auto max-w-[900px] text-lg md:text-xl text-gray-600 leading-relaxed">
-          私たちは事業リーダーの挑戦を支援し、革新的な組織とプロジェクトをつくります。
-          <br />
-          人とチームの力を引き出すことで、社会のクリエイティビティを最大化します。
+          意思決定と実行の無駄を減らし、変革を前進させます。
         </p>
         <div className="flex justify-center pt-4">
           <Button
@@ -40,126 +39,296 @@ export default function Home() {
         {/* サービス概要 */}
         <div className="text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-            戦略 × 実行 × チーム育成で、事業を前に進める
+            複雑な変革を、前に進める
           </h2>
           <div className="max-w-5xl mx-auto space-y-6 text-gray-700 leading-relaxed">
             <p className="text-lg">
-              私たちは、新規事業やデジタル化に取り組む企業に対して、
+              私たちは、<strong className="text-blue-600">戦略PMO支援</strong>と
+              <strong className="text-blue-600">AI活用支援</strong>の2つの領域で、
               <br />
-              <strong className="text-blue-600">
-                戦略策定・アドバイザリー支援、プロジェクトマネジメント、人材育成を一気通貫で提供
-              </strong>
-              しています。
+              組織の変革推進を支援しています。
             </p>
             <p className="text-lg">
-              特に、事業リーダーが"最強のチーム"をつくり、自走型で推進できる状態を目指し、
+              複数部門・複数ベンダーが絡む複雑な変革テーマや、
               <br />
-              戦略と実行、そして組織の力がつながるような支援を大切にしています。
+              現場に定着しにくいAI活用の課題に対して、
+              <br />
+              <strong className="text-blue-600">意思決定と実行の両面から前進させる</strong>ことを大切にしています。
             </p>
             <p className="text-lg">
-              これまで数多くのデジタル領域の新規事業に関わってきた経験を活かし、
+              構想で止まらず、実行まで動かす。
               <br />
-              <strong className="text-blue-600">構想で終わらせず、着実に"動く現場"を生み出す支援</strong>
-              を行っています。
+              <strong className="text-blue-600">組織の複雑性を圧縮し、重要なテーマに集中できる状態をつくる</strong>支援を行っています。
             </p>
           </div>
         </div>
 
         {/* サービス詳細 */}
         <div className="grid gap-8 lg:grid-cols-1 xl:grid-cols-1">
-          {/* サービス1 */}
+          {/* サービス1: 戦略PMO支援 */}
           <div className="bg-white rounded-3xl border-2 border-gray-200 p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-blue-300">
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
-                  <Target className="h-6 w-6 text-white" />
+              <div>
+                <p className="text-xs font-semibold text-blue-500 tracking-widest mb-3">SERVICE 01</p>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
+                    <Target className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">戦略PMO支援</h3>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">新規事業・ＤＸの戦略策定アドバイザリー</h3>
               </div>
 
               <p className="text-gray-700 leading-relaxed">
-                ユーザー理解の設計から、事業アイデアの言語化、優先順位付け、ロードマップ策定まで。
+                複雑な変革テーマを、意思決定と実行の両面から前進させます。
                 <br />
-                新規事業やDX推進を、"構想で止まらず、動かす"戦略に落とし込みます。
+                構想を整理し、複雑な実行体制を動かします。
               </p>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">こんな課題に対応</h4>
+                  <ul className="space-y-2 text-gray-700 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      構想はあるが、現場が動ける単位に落ちていない
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      施策が乱立し、優先順位が曖昧
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      複数部門・複数ベンダーの体制で、実行が複雑化している
+                    </li>
+                  </ul>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">提供価値</h4>
+                  <ul className="space-y-2 text-gray-700 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      構想を意思決定可能な形に整理する
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      施策群を実行可能な形に再設計する
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      複雑な実行体制を動かし、前に進める
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
               <hr className="border-gray-200" />
 
-              <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-gray-800">導入事例</h4>
+              <div className="space-y-3">
+                <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">導入事例</h4>
                 <div>
-                  <h5 className="font-bold text-gray-800 mb-2">大手ITサービス事業者</h5>
+                  <h5 className="font-bold text-gray-800 mb-1">大手教育事業者｜生成AIプロジェクトPMO</h5>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    大手ITサービス事業者の市場調査の実施、次期戦略オプション及び参入戦略及び実現の為のオペレーション方針を策定。
+                    複数ベンダー体制のDXプロジェクトで、ロードマップ策定から進捗管理までを支援。期限通りのリリースを実現。
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* サービス2 */}
+          {/* サービス2: AI活用支援 */}
           <div className="bg-white rounded-3xl border-2 border-gray-200 p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-blue-300">
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
-                  <Briefcase className="h-6 w-6 text-white" />
+              <div>
+                <p className="text-xs font-semibold text-blue-500 tracking-widest mb-3">SERVICE 02</p>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
+                    <Sparkles className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800">AI活用支援</h3>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800">新規事業・ＤＸのPMO代行</h3>
               </div>
 
               <p className="text-gray-700 leading-relaxed">
-                プロジェクトの進行が止まる、会議が形骸化している、KPIの管理がされていない。
+                AI活用を現場業務に接続し、組織能力として定着させます。
                 <br />
-                そんな状態に対して、進捗管理・会議体設計・チームの巻き込みまでを支援する、実行型のPMOサービスを提供します。
+                導入で終わらせず、実務で使われる状態まで支援します。
               </p>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">こんな課題に対応</h4>
+                  <ul className="space-y-2 text-gray-700 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      AI活用が現場に定着せず、一過性で終わる
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      活用が一部の先進人材や特定部署に閉じている
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      現場業務に即したユースケース設計が難しい
+                    </li>
+                  </ul>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">提供価値</h4>
+                  <ul className="space-y-2 text-gray-700 text-sm">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      AI活用を現場業務に接続する
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      個人技ではなく組織能力として定着させる
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-500 mt-1">•</span>
+                      有効なユースケースを整理し、横展開可能にする
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
               <hr className="border-gray-200" />
 
-              <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-gray-800">導入事例</h4>
+              <div className="space-y-3">
+                <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">導入事例</h4>
                 <div>
-                  <h5 className="font-bold text-gray-800 mb-2">大手教育事業者のDXプロジェクトPMO支援</h5>
+                  <h5 className="font-bold text-gray-800 mb-1">大手メーカー｜AI活用の組織展開</h5>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    DXにおけるロードマップを作成し、社内外ステークホルダ間で、進捗及び課題を管理。大型プロジェクトの期限通りリリースと社内業務のデジタル化×高度化を実現
+                    部門別ユースケース設計から研修・定着支援を実施。特定人材に閉じていた活用を組織全体に展開。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 私たちの強み */}
+      <section className="space-y-12">
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            私たちの強み
+          </h2>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-gray-100 rounded-2xl p-6 space-y-4 shadow-sm">
+            <p className="text-xs font-semibold text-blue-400 tracking-widest">01</p>
+            <h3 className="text-lg font-bold text-gray-800">戦略と現場、両方を理解</h3>
+            <div className="space-y-1">
+              <p className="text-gray-700 text-sm leading-relaxed">
+                構想から実行まで一貫して支援します。
+              </p>
+              <p className="text-gray-500 text-sm">
+                戦略コンサル × 事業会社出身のチーム。
+              </p>
+            </div>
+          </div>
+          <div className="bg-gray-100 rounded-2xl p-6 space-y-4 shadow-sm">
+            <p className="text-xs font-semibold text-blue-400 tracking-widest">02</p>
+            <h3 className="text-lg font-bold text-gray-800">業務に接続した設計</h3>
+            <div className="space-y-1">
+              <p className="text-gray-700 text-sm leading-relaxed">
+                ツール導入ではなく、現場で使われる形に。
+              </p>
+              <p className="text-gray-500 text-sm">
+                定着までを見据えた設計を行います。
+              </p>
+            </div>
+          </div>
+          <div className="bg-gray-100 rounded-2xl p-6 space-y-4 shadow-sm">
+            <p className="text-xs font-semibold text-blue-400 tracking-widest">03</p>
+            <h3 className="text-lg font-bold text-gray-800">組織を動かす推進力</h3>
+            <div className="space-y-1">
+              <p className="text-gray-700 text-sm leading-relaxed">
+                複数部門・ベンダーを含む体制を前進。
+              </p>
+              <p className="text-gray-500 text-sm">
+                個人技ではなく組織能力として蓄積。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 支援実績 */}
+      <section className="space-y-12">
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+            支援実績
+          </h2>
+        </div>
+        <div className="space-y-6">
+          {/* 事例1 */}
+          <div className="bg-white rounded-2xl border border-gray-200 p-5 shadow-md">
+            <div className="space-y-3">
+              <div>
+                <h3 className="text-lg font-bold text-gray-800">AI駆動開発</h3>
+                <p className="text-sm text-gray-500">大手製造業</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">支援内容</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    曖昧な要望から要件を整理し、LLM活用アプリの仕様化・開発推進を担当。
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">成果</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <strong className="text-gray-800">2か月で4プロダクト</strong>をデリバリー。手戻りなく、<strong className="text-gray-800">予定より前倒しで完了</strong>。
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* サービス3 */}
-          <div className="bg-white rounded-3xl border-2 border-gray-200 p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-blue-300">
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
-                  <Users className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-800">新規事業・ＤＸに関する人材育成</h3>
+          {/* 事例2 */}
+          <div className="bg-white rounded-2xl border border-gray-200 p-5 shadow-md">
+            <div className="space-y-3">
+              <div>
+                <h3 className="text-lg font-bold text-gray-800">人材育成PMO</h3>
+                <p className="text-sm text-gray-500">大手人材サービス</p>
               </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">支援内容</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    ジュニアPdM約50名向けの育成スキームを設計し、週次で運用・改善を伴走。
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">成果</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <strong className="text-gray-800">上司の育成負荷が軽減</strong>。受講者の思考・業務の型化が進み、成長実感を獲得。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-              <p className="text-gray-700 leading-relaxed">
-                新規事業やDXを担う人材に必要なスキル・マインドを、実務に即して育成。
-                <br />
-                人材要件の定義から研修設計、OJTの実施まで一貫して支援します。
-              </p>
-
-              <hr className="border-gray-200" />
-
-              <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-gray-800">導入事例</h4>
-                <div className="space-y-4">
-                  <div>
-                    <h5 className="font-bold text-gray-800 mb-2">大手ITサービス企業のPdM育成</h5>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      PdM育成における課題の抽出、育成ロードマップや個別研修の設計・運営・改善を実施。高い育成効果を発揮し、上司の育成負荷軽減を実現
-                    </p>
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-gray-800 mb-2">大手SIer企業の人材育成リーダー</h5>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      新規事業研修に関する方法論の研修及びメンタリングを実施。実プロジェクト形式で、新規事業を検討し、リリースに向け推進中
-                    </p>
-                  </div>
+          {/* 事例3 */}
+          <div className="bg-white rounded-2xl border border-gray-200 p-5 shadow-md">
+            <div className="space-y-3">
+              <div>
+                <h3 className="text-lg font-bold text-gray-800">実装推進PMO</h3>
+                <p className="text-sm text-gray-500">教育サービス</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">支援内容</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    複数ベンダー体制の推進を立て直し、未決定事項の可視化・解消を主導。
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">成果</p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    停滞していたプロジェクトを<strong className="text-gray-800">期限内にデリバリー完了</strong>。
+                  </p>
                 </div>
               </div>
             </div>
@@ -177,7 +346,7 @@ export default function Home() {
 
         <div className="max-w-6xl mx-auto space-y-12">
           {/* 代表 */}
-          <div className="rounded-3xl border-2 p-8 lg:p-12 bg-gradient-to-br from-white to-blue-50">
+          <div className="rounded-3xl border-2 p-8 lg:p-12 bg-gradient-to-br from-white to-gray-50">
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
               <div className="flex-shrink-0">
                 <img
@@ -186,34 +355,35 @@ export default function Home() {
                   className="w-48 lg:w-56 h-48 lg:h-56 object-cover object-top border-2 border-white shadow-lg rounded-lg"
                 />
               </div>
-              <div className="flex-1 text-center lg:text-left space-y-6">
+              <div className="flex-1 text-center lg:text-left space-y-4">
                 <div>
-                  <p className="text-blue-600 font-semibold text-lg">代表取締役</p>
+                  <p className="text-blue-600 font-semibold">代表取締役</p>
                   <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">山崎 亮</h3>
+                  <p className="text-gray-600 mt-1">戦略と実行をつなぎ、変革を前に進める</p>
                 </div>
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  DeNAにて新規事業・事業開発に従事。外資系コンサルティングファーム（戦略部門）にて、大手企業のDX・新規事業戦略を多数支援。数十社の事業開発・組織設計・人材育成に関与し、"動く現場"をつくることに強みを持つ。ビジネスと組織、個人の成長の交差点に立ち続けながら、創造的な組織づくりを支援中
+                <p className="text-gray-700 leading-relaxed">
+                  DeNA、外資系コンサル（戦略部門）を経て独立。大手企業のDX・新規事業を多数支援。
                 </p>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="border-blue-300 text-blue-600 hover:bg-blue-50 bg-transparent"
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">新規事業</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">DX戦略</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">PMO</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">組織育成</span>
+                </div>
+                <a
+                  href="https://note.com/growth_commit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-sm text-gray-500 hover:text-blue-600"
                 >
-                  <a
-                    href="https://note.com/growth_commit"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center"
-                  >
-                    noteを執筆中 <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
-                </Button>
+                  note <ExternalLink className="ml-1 h-3 w-3" />
+                </a>
               </div>
             </div>
           </div>
 
           {/* リードエンジニア */}
-          <div className="rounded-3xl border-2 p-8 lg:p-12 bg-gradient-to-br from-white to-cyan-50">
+          <div className="rounded-3xl border-2 p-8 lg:p-12 bg-gradient-to-br from-white to-gray-50">
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
               <div className="flex-shrink-0">
                 <img
@@ -222,14 +392,20 @@ export default function Home() {
                   className="w-48 lg:w-56 h-48 lg:h-56 object-cover object-top border-2 border-white shadow-lg rounded-lg"
                 />
               </div>
-              <div className="flex-1 text-center lg:text-left space-y-6">
+              <div className="flex-1 text-center lg:text-left space-y-4">
                 <div>
-                  <p className="text-cyan-600 font-semibold text-lg">リードエンジニア</p>
+                  <p className="text-blue-600 font-semibold">リードエンジニア</p>
                   <h3 className="text-3xl lg:text-4xl font-bold text-gray-800">小川 芳充</h3>
+                  <p className="text-gray-600 mt-1">技術と業務をつなぎ、実装まで落とし込む</p>
                 </div>
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  サイバーエージェントにて、ゲーム・広告システム・ECシステムの開発に従事。大手メディア企業との協業を経て、toC／toB向けの複数サービスの設計・開発を担当。現場目線での課題発見と、実装まで落とし込むプロセス設計を得意とする。技術・ビジネス・組織の最適な連携を目指しながら、AIによる開発と業務効率化の支援を探求・実践中。
+                <p className="text-gray-700 leading-relaxed">
+                  サイバーエージェントにてゲーム・広告・ECシステム開発に従事。AI活用と業務効率化を実践。
                 </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Web開発</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">システム設計</span>
+                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">AI駆動開発</span>
+                </div>
               </div>
             </div>
           </div>

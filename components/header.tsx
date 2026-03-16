@@ -23,24 +23,9 @@ const navItems: NavItem[] = [
     icon: <Home className="h-5 w-5" />,
   },
   {
-    title: "サービス",
-    href: "#",
-    icon: <Briefcase className="h-5 w-5" />,
-    submenu: [
-      { title: "戦略策定アドバイザリー", href: "/service_advisory" },
-      { title: "新規事業・DXのPMO代行", href: "/service_pmo" },
-      { title: "新規事業・DXに関する人材育成", href: "/service_training" },
-    ],
-  },
-  {
     title: "ニュースレター",
-    href: "/newsletter/generativeAI_toC",
+    href: "/newsletter/ai-operations",
     icon: <Mail className="h-5 w-5" />,
-  },
-  {
-    title: "会社概要",
-    href: "/about",
-    icon: <Users className="h-5 w-5" />,
   },
 ]
 
