@@ -370,14 +370,6 @@ export default function Home() {
                   <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">PMO</span>
                   <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">組織育成</span>
                 </div>
-                <a
-                  href="https://note.com/growth_commit"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm text-gray-500 hover:text-blue-600"
-                >
-                  note <ExternalLink className="ml-1 h-3 w-3" />
-                </a>
               </div>
             </div>
           </div>
