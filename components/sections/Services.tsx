@@ -124,6 +124,24 @@ export default function Services() {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          className="mt-12"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <a
+            href="https://lp.growthcommit.com/aipm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-brand-gray-900 text-brand-gray-900 px-6 py-3 text-sm font-medium hover:bg-brand-gray-900 hover:text-white transition-colors"
+          >
+            月額プロマネ — サービス詳細を見る
+            <span aria-hidden="true">→</span>
+          </a>
+        </motion.div>
       </div>
     </section>
   )
