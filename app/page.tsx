@@ -123,6 +123,18 @@ export default function Home() {
 
               <hr className="border-gray-200" />
 
+              <div>
+                <a
+                  href="https://lp.growthcommit.com/aipm/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-blue-600 text-blue-600 px-5 py-2.5 text-sm font-medium rounded-lg hover:bg-blue-50 transition-colors"
+                >
+                  サービス詳細（月額プロマネ）を見る
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+              </div>
+
               <div className="space-y-3">
                 <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">導入事例</h4>
                 <div>
@@ -206,18 +218,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 月額プロマネLPへのリンク */}
-        <div>
-          <a
-            href="https://lp.growthcommit.com/aipm/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-blue-600 text-blue-600 px-6 py-3 text-sm font-medium rounded-lg hover:bg-blue-50 transition-colors"
-          >
-            月額プロマネ — サービス詳細を見る
-            <ExternalLink className="h-4 w-4" />
-          </a>
-        </div>
       </section>
 
       {/* 私たちの強み */}
