@@ -121,8 +121,6 @@ export default function Home() {
                 </div>
               </div>
 
-              <hr className="border-gray-200" />
-
               <div>
                 <a
                   href="https://lp.growthcommit.com/aipm/"
@@ -134,6 +132,8 @@ export default function Home() {
                   <ExternalLink className="h-4 w-4" />
                 </a>
               </div>
+
+              <hr className="border-gray-200" />
 
               <div className="space-y-3">
                 <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">導入事例</h4>
